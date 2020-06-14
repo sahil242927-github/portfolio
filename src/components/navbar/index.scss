@@ -1,0 +1,17 @@
+#navbar {
+  padding: 10px;
+  position: fixed;
+
+  ul {
+    display: flex;
+    li {
+      padding: 20px;
+      list-style: none;
+      cursor: pointer;
+    }
+  }
+  .active {
+    background-color: orangered;
+    border: none;
+  }
+}
