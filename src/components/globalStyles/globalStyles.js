@@ -8,7 +8,8 @@ export default createGlobalStyle`
   /* Background colors */
   --color-primary: #ffa45c;
   --color-secondary: #302822;
-
+  --color-secondary-rbg: 48, 40, 34;
+  
   /* Border Color */
   --border-color-light-grey: #cfcece;
 
