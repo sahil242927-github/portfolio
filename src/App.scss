@@ -1,0 +1,12 @@
+#container {
+  display: grid;
+  /* height of the each row */
+  grid-template-rows: min-content min-content repeat(2, min-content) min-content;
+  grid-template-columns:
+    [spaceleft-start] minmax(6rem, 1fr)
+    [spaceleft-end center-start]
+    repeat(8, [col-start] minmax(min-content, 16rem) [col-end])
+    [center-end spaceright-start]
+    minmax(6rem, 1fr)
+    [spaceright-end];
+}
