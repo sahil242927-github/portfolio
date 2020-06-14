@@ -5,8 +5,16 @@ export default createGlobalStyle`
 
 
 :root {
+  /* Background colors */
   --color-primary: #ffa45c;
   --color-secondary: #302822;
+
+  /* Border Color */
+  --border-color-light-grey: #cfcece;
+
+  /* Default Font */
+  --font-primary: "Montserrat", sans-serif;
+  --font-heading: "Montserrat", sans-serif;
 }
 
  /* inherit all the properties from HTML */
