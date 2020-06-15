@@ -9,4 +9,25 @@
     [center-end spaceright-start]
     minmax(6rem, 1fr)
     [spaceright-end];
+
+  @media only screen and (max-width: 24em) {
+    grid-template-rows: min-content min-content repeat(2, min-content) min-content;
+    grid-template-columns:
+      [spaceleft-start] 1rem
+      [spaceleft-end center-start]
+      repeat(5, [col-start] minmax(min-content, 14rem) [col-end])
+      [center-end spaceright-start]
+      1rem
+      [spaceright-end];
+  }
+
+  #skills,
+  #work,
+  #about,
+  #tech-stack {
+    margin-bottom: 3rem;
+  }
+  #contact {
+    margin: 6rem 0 10rem 0;
+  }
 }

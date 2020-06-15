@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import sprite from '../logo-and-icons/skill-logo-and-icons.svg';
 import { Link } from 'react-scroll';
 
 import './index.scss';
@@ -25,17 +26,21 @@ export default ({ inView }) => {
   };
 
   return (
-    <nav className={addClass}>
-      <div className='left-links'>
+    <div>
+      <div className='burger-menu'>
+        <svg>
+          <use href={`${sprite}#burger-menu`} />
+        </svg>
         <ul>
           {navLinks.map((nav) => (
             <li className={nav.status} key={nav.text}>
               <Link
                 to={nav.text}
                 smooth={true}
-                offset={-70}
+                offset={-80}
                 duration={500}
                 onClick={(event) => makeActive(event.target.text)}
+                hashSpy={true}
               >
                 {nav.text}
               </Link>
@@ -43,6 +48,26 @@ export default ({ inView }) => {
           ))}
         </ul>
       </div>
-    </nav>
+      <nav className={addClass}>
+        <div>
+          <ul className='left-links'>
+            {navLinks.map((nav) => (
+              <li className={nav.status} key={nav.text}>
+                <Link
+                  to={nav.text}
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
+                  onClick={(event) => makeActive(event.target.text)}
+                  hashSpy={true}
+                >
+                  {nav.text}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </nav>
+    </div>
   );
 };

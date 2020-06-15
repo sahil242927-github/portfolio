@@ -1,8 +1,9 @@
-import React from "react";
-import "./index.scss";
-import { PageHeading, Paragraph } from "../styled-components";
+import React from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
+import './index.scss';
+import { PageHeading, Paragraph } from '../styled-components';
 export default () => (
-  <section className="about" id="about">
+  <section className='about' id='about'>
     <div>
       <PageHeading>About Me</PageHeading>
       <Paragraph>
@@ -21,9 +22,11 @@ export default () => (
         This portfolio website looks simple, but it has all the modern tech
         <br />
         <br />
-        <strong>About this website &#62;</strong>
+        <Link smooth to='/website#tech-stack' offset={-70} duration={500}>
+          <strong>About this website &#62;</strong>
+        </Link>
       </Paragraph>
     </div>
-    <div className="aboutme-img" />
+    <div className='aboutme-img' />
   </section>
 );
