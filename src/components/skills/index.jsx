@@ -35,7 +35,16 @@ export default () => (
         Well-organised person, problem solver, independent employee with high
         attention to detail. Fan of MMA, outdoor activities, TV series and,
         recently, English literature. A family person, father of two fractious
-        boys, therefore remote employment is preferred.
+        girls, therefore remote employment is preferred. I also like work on
+        C2H.
+        <br />
+        <br />
+        I have got around 9 years of experience and I wokred on multiple stacks
+        like LAMP, MEAN, MERN stack. Started my currier as a web developer back
+        in 2010.
+        <br />
+        <br />
+        Currently working on MERN Stack.
       </Paragraph>
     </div>
     <div className='skill-logos'>
