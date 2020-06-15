@@ -9,7 +9,7 @@ import './index.scss';
 
 export default () => (
   <section className='contact'>
-    <PageHeadingWithLines className='heading' color='grey'>
+    <PageHeadingWithLines className='heading' color='black'>
       Contact Us
     </PageHeadingWithLines>
     <div className='container'>

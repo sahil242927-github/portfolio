@@ -1,4 +1,13 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const fadeIn = keyframes`
+  0%{
+    opacity:0.4;
+  }
+  100%{
+    opacity:1;
+  }
+`;
 
 export const PageHeading = styled.h2`
   font-size: 4rem;
@@ -29,12 +38,18 @@ export const Paragraph = styled.p`
   line-height: 1.8;
   margin-bottom: 2rem;
 `;
+
 export const Button = styled.button`
   background-color: #ffa45c;
   color: white;
   padding: 1.3rem;
   border: 0;
   width: ${(props) => props.width || '100%'};
+  cursor: pointer;
+`;
+
+export const AttentionButton = styled(Button)`
+  animation: ${fadeIn} 1s ease-in-out infinite;
 `;
 
 export const InputField = styled.input`

@@ -1,7 +1,7 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import './index.scss';
-import { PageHeading, Paragraph } from '../styled-components';
+import { PageHeading, Paragraph, AttentionButton } from '../styled-components';
 export default () => (
   <section className='about' id='about'>
     <div>
@@ -23,7 +23,7 @@ export default () => (
         <br />
         <br />
         <Link smooth to='/portfolio#tech-stack' offset={-70} duration={500}>
-          <strong>About this website &#62;</strong>
+          <AttentionButton width='auto'>ABOUT THIS WEBSITE</AttentionButton>
         </Link>
       </Paragraph>
     </div>
