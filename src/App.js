@@ -26,7 +26,7 @@ function App() {
         <Home ref={ref} />
         <Work />
         <About />
-        <Route path='/portfolio' component={AboutWebsite} />
+        <Route path='/website' component={AboutWebsite} />
         <Skills />
         <Contact />
         <Footer />

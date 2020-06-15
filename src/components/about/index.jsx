@@ -22,7 +22,7 @@ export default () => (
         This portfolio website looks simple, but it has all the modern tech
         <br />
         <br />
-        <Link smooth to='/portfolio#tech-stack' offset={-70} duration={500}>
+        <Link smooth to='/website/#tech-stack' offset={-70} duration={500}>
           <AttentionButton width='auto'>ABOUT THIS WEBSITE</AttentionButton>
         </Link>
       </Paragraph>
