@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const PageHeading = styled.h2`
   font-size: 4rem;
@@ -15,10 +15,10 @@ export const PageHeadingWithLines = styled.h2`
   grid-column-gap: 1rem;
   font-size: 4rem;
   font-weight: 400;
-  color: ${(props) => props.color || "$color-grey-dark-1"};
+  color: ${(props) => props.color || '$color-grey-dark-1'};
   &:before,
   &:after {
-    content: "";
+    content: '';
     height: 1px;
     display: block;
     background-color: currentColor;
@@ -34,28 +34,42 @@ export const Button = styled.button`
   color: white;
   padding: 1.3rem;
   border: 0;
-  width: ${(props) => props.width || "100%"};
+  width: ${(props) => props.width || '100%'};
 `;
 
 export const InputField = styled.input`
-  border: 1px solid currentColor;
-  color: var(--border-color-light-grey);
+  color: var(--border-color-grey);
+  border: 1px solid var(--border-color-light-grey);
   height: 4rem;
   width: 100%;
   font-weight: 200;
   display: block;
   margin-bottom: 0.5rem;
   padding: 0.5rem;
+  font-family: var(--font-heading);
+
+  &:focus {
+    outline: none;
+    color: var(--border-color-light-grey-1);
+    color: var(--border-color-grey);
+  }
 `;
 export const TextArea = styled.textarea`
-  border: 1px solid currentColor;
-  color: var(--border-color-light-grey);
+  color: var(--border-color-grey);
+  border: 1px solid var(--border-color-light-grey);
+  font-family: var(--font-heading);
   height: 10rem;
   width: 100%;
   font-weight: 200;
   display: block;
   margin-bottom: 0.5rem;
   padding: 0.5rem;
+
+  &:focus {
+    outline: none;
+    border: 1px solid var(--border-color-light-grey-1);
+    color: var(--border-color-grey);
+  }
 `;
 
 export const SpinnerOverlay = styled.div`

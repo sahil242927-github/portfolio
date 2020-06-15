@@ -1,7 +1,6 @@
 .about-website {
   grid-column: center-start / center-end;
   display: grid;
-  grid-template-columns: repeat(2, minmax(min-content, 1fr));
   grid-column-gap: 2rem;
   padding: 5rem;
 
