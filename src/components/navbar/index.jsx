@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import sprite from '../logo-and-icons/skill-logo-and-icons.svg';
 import { Link } from 'react-scroll';
+import { Link as RouteLink } from 'react-router-dom';
+import { Button } from '../styled-components';
 
 import './index.scss';
 
@@ -46,11 +48,21 @@ export default ({ inView }) => {
               </Link>
             </li>
           ))}
+          <li>
+            <RouteLink
+              to={process.env.PUBLIC_URL + '/resume.pdf'}
+              target='_blank'
+              rel='noopener noreferrer'
+              download
+            >
+              Download CV
+            </RouteLink>
+          </li>
         </ul>
       </div>
       <nav className={addClass}>
-        <div>
-          <ul className='left-links'>
+        <div className='left-links'>
+          <ul>
             {navLinks.map((nav) => (
               <li className={nav.status} key={nav.text}>
                 <Link
@@ -66,6 +78,16 @@ export default ({ inView }) => {
               </li>
             ))}
           </ul>
+          <Button className='resume' width='auto'>
+            <RouteLink
+              to={process.env.PUBLIC_URL + '/resume.pdf'}
+              target='_blank'
+              rel='noopener noreferrer'
+              download
+            >
+              Download CV
+            </RouteLink>
+          </Button>
         </div>
       </nav>
     </div>

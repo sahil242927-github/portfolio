@@ -2,6 +2,7 @@
   background-color: blueviolet;
   grid-column: 1/ -1;
   height: 60vh;
+  display: flex;
 
   background-image: linear-gradient(
       to right bottom,
@@ -49,6 +50,13 @@
     background-color: white;
     padding: 1rem;
     font-size: 1.8rem;
+  }
+  .resume {
+    align-self: flex-end;
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+    transform: translate(100%, -10rem);
   }
 
   .banner-text-1 {
