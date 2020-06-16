@@ -45,10 +45,6 @@ export default () => (
             <strong>fully responsive</strong>
           </li>
         </ul>
-        <img
-          src={process.env.PUBLIC_URL + '/img/about-website/css-grid.png'}
-          alt='styled components'
-        />
       </div>
       <div className='tech-stack'>
         <h2 className='list-heading'>React JS</h2>
@@ -66,6 +62,10 @@ export default () => (
           <li>Webpack</li>
           <li>Server Side Rendering for SEO</li>
         </ul>
+        <img
+          src={process.env.PUBLIC_URL + '/img/about-website/css-grid.png'}
+          alt='styled components'
+        />
         <img
           src={
             process.env.PUBLIC_URL +
