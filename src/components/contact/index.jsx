@@ -10,7 +10,7 @@ import './index.scss';
 export default () => (
   <section className='contact'>
     <PageHeadingWithLines className='heading' color='black'>
-      Contact Us
+      Contact
     </PageHeadingWithLines>
     <div className='container'>
       <div className='form-container' id='contact'>
