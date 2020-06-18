@@ -15,6 +15,14 @@ export const PageHeading = styled.h2`
   font-family: $font-heading;
   font-weight: 400;
 `;
+
+export const Error = styled.p`
+  font-size: 1rem;
+  color: red;
+  padding-bottom: 1.2rem;
+  font-weight: 500;
+  font-style: italic;
+`;
 export const PageHeadingWithLines = styled.h2`
   text-align: center;
   display: grid;
@@ -37,6 +45,24 @@ export const PageHeadingWithLines = styled.h2`
 export const Paragraph = styled.p`
   line-height: 1.8;
   margin-bottom: 2rem;
+`;
+
+export const Input = styled.input`
+  color: var(--border-color-grey);
+  border: 1px solid var(--border-color-light-grey);
+  height: 4rem;
+  width: 100%;
+  font-weight: 200;
+  display: block;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  font-family: var(--font-heading);
+
+  &:focus {
+    outline: none;
+    color: var(--border-color-light-grey-1);
+    color: var(--border-color-grey);
+  }
 `;
 
 export const Button = styled.button`
