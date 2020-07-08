@@ -9,6 +9,26 @@ const fadeIn = keyframes`
   }
 `;
 
+export const ModalContainer = styled.div`
+  background-color: grey;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+`;
+export const ModalBody = styled.div`
+  background-color: white;
+  width: ${(props) => props.width || '40vw'};
+  height: ${(props) => props.height || '40vh'};
+  margin: 5rem;
+  padding: 5rem;
+`;
+
 export const PageHeading = styled.h2`
   font-size: 4rem;
   /* padding: 1rem 0 1rem 2rem; */

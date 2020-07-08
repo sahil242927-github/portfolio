@@ -14,7 +14,7 @@ export default createGlobalStyle`
   --border-color-light-grey: #f1f1f1;
   --border-color-light-grey-1: #c3c1c1;
   --border-color-grey: #333333;
-
+ 
   /* Default Font */
   --font-primary: "Montserrat", sans-serif;
   --font-heading: "Montserrat", sans-serif;
